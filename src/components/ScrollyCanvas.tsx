@@ -16,7 +16,8 @@ export default function ScrollyCanvas() {
     for (let i = 0; i < frameCount; i++) {
       const img = new Image();
       const paddedIndex = i.toString().padStart(2, '0');
-      img.src = `/sequence/frame_${paddedIndex}_delay-0.066s.png`;
+      const basePath = process.env.NODE_ENV === 'production' ? '/Protfolio' : '';
+      img.src = `${basePath}/sequence/frame_${paddedIndex}_delay-0.066s.png`;
       img.onload = () => {
         loadedCount++;
         if (loadedCount === frameCount) {
