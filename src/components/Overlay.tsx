@@ -1,15 +1,10 @@
 "use client";
 
-import { motion, useScroll } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
 
 export default function Overlay() {
-  const containerRef = useRef(null);
-  
-  const { scrollYProgress } = useScroll();
-
   return (
-    <div ref={containerRef} className="absolute inset-0 pointer-events-none z-10 w-full overflow-hidden">
+    <div className="absolute inset-0 pointer-events-none z-10 w-full overflow-hidden">
       <div className="flex flex-col w-full text-white">
         
         {/* Section 1 */}

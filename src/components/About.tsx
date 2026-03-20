@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Target, GraduationCap, Mail, Video, Code, BrainCircuit, PenTool, Sparkles, Figma } from "lucide-react";
+import { GraduationCap, Mail, Video, Code, BrainCircuit, PenTool, Sparkles, Figma } from "lucide-react";
 
 export default function About() {
   const skills = [
@@ -73,7 +73,7 @@ export default function About() {
 
             <div className="bg-neutral-900/30 border border-white/5 p-10 rounded-[2.5rem] flex items-center justify-between group cursor-pointer hover:bg-neutral-800/40 transition-colors">
               <div>
-                <p className="text-sm font-medium tracking-[0.2em] text-neutral-500 uppercase mb-2">Let's Talk</p>
+                <p className="text-sm font-medium tracking-[0.2em] text-neutral-500 uppercase mb-2">Let&apos;s Talk</p>
                 <a href="mailto:hp1170828@gmail.com" className="text-xl md:text-2xl font-light group-hover:text-purple-400 transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-px after:bg-purple-400 group-hover:after:w-full after:transition-all after:duration-300">
                   hp1170828@gmail.com
                 </a>
