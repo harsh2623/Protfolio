@@ -1,6 +1,7 @@
 import ScrollyCanvas from "@/components/ScrollyCanvas";
 import Overlay from "@/components/Overlay";
 import About from "@/components/About";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <Overlay />
       </div>
 
+      <Projects />
       <About />
     </main>
   );
